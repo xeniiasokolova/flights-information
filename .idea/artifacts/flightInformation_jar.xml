@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="flightInformation:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/flightInformation_jar</output-path>
+    <root id="archive" name="flightInformation.jar">
+      <element id="module-output" name="flightInformation" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.4/jackson-datatype-jsr310-2.13.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.13.4/jackson-core-2.13.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.13.4.2/jackson-databind-2.13.4.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
