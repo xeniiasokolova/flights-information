@@ -5,11 +5,11 @@
 
 Программа разработана на Java 17.
 
-Запуск программы в командной строке: java -jar .\flightInformation.jar [Путь к JSON-файлу].
+Запуск программы в командной строке: java -jar flightInformation.jar [Путь к JSON-файлу].
 
 Пример результата выполнения программы в командной строке Windows:
-![image](https://user-images.githubusercontent.com/51531613/225363704-f15965a1-ab14-4dad-89a0-77e3b958ef4c.png)
-
+![image](https://user-images.githubusercontent.com/51531613/225367178-b1905e15-51e7-4f19-a06c-48d741264296.png)
 
 Пример результата выполнения программы в командной строке Linux:
-![image](https://user-images.githubusercontent.com/51531613/225362461-759c0399-0e72-450b-9b0f-6d175874d5e3.png)
+![image](https://user-images.githubusercontent.com/51531613/225367280-879d9e2c-b62c-4e66-9c5f-e6b49a1bab7a.png)
+
