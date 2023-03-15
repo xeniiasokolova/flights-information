@@ -19,21 +19,25 @@ public class Main {
     private static String fileName;
 
     public static void main(String[] args) {
-        fileName = args[0];
-        List<Long> arrayMinutes = getAllMinutesFromFilteredTickets();
-        long averageMinutes = getAverageTimeForFlight(arrayMinutes);
-        long percentileMinutes = getPercentile(arrayMinutes);
+        try {
+            fileName = args[0];
+            List<Long> arrayMinutes = getAllMinutesFromFilteredTickets();
+            long averageMinutes = getAverageTimeForFlight(arrayMinutes);
+            long percentileMinutes = getPercentile(arrayMinutes);
 
-        System.out.printf("Cреднее время полета между городами %s и %s составляет %d часов %d минут(ы) (всего %d минут(ы))\n",
-                DEPARTURE_CITY, ARRIVAL_CITY,
-                DateTimeUtil.getHoursFromMinutes(averageMinutes),
-                DateTimeUtil.getOutputMinutesFromHours(averageMinutes), averageMinutes);
+            System.out.printf("Cреднее время полета между городами %s и %s составляет %d часов %d минут(ы) (всего %d минут(ы))\n",
+                    DEPARTURE_CITY, ARRIVAL_CITY,
+                    DateTimeUtil.getHoursFromMinutes(averageMinutes),
+                    DateTimeUtil.getOutputMinutesFromHours(averageMinutes), averageMinutes);
 
 
-        System.out.printf("%d-й процентиль времени полета между городами %s и %s составляет %d часов %d минут(ы) (всего %d минут(ы))\n",
-                PERCENTILE, DEPARTURE_CITY, ARRIVAL_CITY,
-                DateTimeUtil.getHoursFromMinutes(percentileMinutes),
-                DateTimeUtil.getOutputMinutesFromHours(percentileMinutes), percentileMinutes);
+            System.out.printf("%d-й процентиль времени полета между городами %s и %s составляет %d часов %d минут(ы) (всего %d минут(ы))\n",
+                    PERCENTILE, DEPARTURE_CITY, ARRIVAL_CITY,
+                    DateTimeUtil.getHoursFromMinutes(percentileMinutes),
+                    DateTimeUtil.getOutputMinutesFromHours(percentileMinutes), percentileMinutes);
+        } catch (Exception e) {
+            System.out.println("Не задан путь к JSON-файлу");
+        }
     }
 
 
