@@ -5,8 +5,7 @@
 
 Программа разработана на Java 17.
 
-Запуск программы в командной строке: java -jar .\flightInformation.jar [Путь к JSON-файлу]
-Программа запускается из командной строки Linux или Windows. 
+Запуск программы в командной строке: java -jar .\flightInformation.jar [Путь к JSON-файлу].
 
 Пример результата выполнения программы в командной строке Windows:
 ![image](https://user-images.githubusercontent.com/51531613/225363704-f15965a1-ab14-4dad-89a0-77e3b958ef4c.png)
